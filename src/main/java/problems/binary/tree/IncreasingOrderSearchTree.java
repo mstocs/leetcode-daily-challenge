@@ -89,8 +89,11 @@ public class IncreasingOrderSearchTree {
 
         inorderAndSaveNode(node.left);
 
+        //保存遍历节点到右节点
         resNode.right = node;
+        //当前节点的左子树已经遍历完，置为空，否则会出现循环树
         node.left = null;
+        //将指针指向最新保存的右节点
         resNode = node;
 
         inorderAndSaveNode(node.right);
