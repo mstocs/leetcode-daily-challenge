@@ -24,15 +24,24 @@ package problems.bit.xor;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class DecodeXoredPermutation {
+    /**
+     * 思路，首先求出第一个元素，然后解法
+     * @see DecodeXoredArray
+     */
+
     public int[] decode(int[] encoded) {
+
+        //求出前n个正整数的亦或结果
         int allXor = 0;
         for(int i = 1; i < encoded.length ; i++) {
             allXor = allXor ^ i;
         }
+        //求出除了原数组首元素之外的亦或结果
         int restXor = encoded[1];
         for(int i = 3; i < encoded.length; i+=2) {
             restXor = restXor ^ encoded[i];
         }
+        //首元素等于上述两值得亦或结果
         int first = allXor ^ restXor;
         int[] result = new int[encoded.length + 1];
         result[0] = first;
