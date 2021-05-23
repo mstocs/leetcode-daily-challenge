@@ -1,4 +1,4 @@
-package problems.bit.xor;
+package problems.xor;
 
 import java.util.HashSet;
 import java.util.Set;

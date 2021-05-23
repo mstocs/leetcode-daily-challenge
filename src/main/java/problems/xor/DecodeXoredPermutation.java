@@ -1,4 +1,4 @@
-package problems.bit.xor;
+package problems.xor;
 
 /**
  * 给你一个整数数组 perm ，它是前 n 个正整数的排列，且 n 是个 奇数 。

@@ -1,4 +1,4 @@
-package problems.bit.xor;
+package problems.xor;
 
 /**
  * 2021年05月18日23:50:25
