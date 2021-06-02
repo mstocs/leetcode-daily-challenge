@@ -2,7 +2,9 @@ package problems.reverse;
 
 
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 2021年05月30日20:28:09
@@ -36,5 +38,12 @@ public class ReverseSubstringsBetweenEachPairOfParentheses {
             }
         }
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        sb.reverse();
+        ConcurrentHashMap<Integer, Integer> map = new ConcurrentHashMap<>();
+
     }
 }
